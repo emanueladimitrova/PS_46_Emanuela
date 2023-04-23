@@ -1,0 +1,39 @@
+﻿<Window x:Class="StudentInfoSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Студентска информационна система" Height="450" Width="800">
+    <Grid x:Name="MainGrid">
+        <TextBox x:Name="txtFirstName" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,12,308,377"/>
+        <TextBox x:Name="txtMiddleName" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,35,308,355"/>
+        <TextBox x:Name="txtLastName"  TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,57,308,328"/>
+        <TextBox x:Name="txtFaculty" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,106,308,280"/>
+        <TextBox x:Name="txtSpecialty"  TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,130,308,255"/>
+        <TextBox x:Name="txtEducationLevel" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,154,308,227"/>
+        <TextBox x:Name="txtStatus" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,179,308,195"/>
+        <TextBox x:Name="txtFakNum" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,201,308,174"/>
+        <TextBox x:Name="txtCourse"  TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,260,308,111"/>
+        <TextBox x:Name="txtFacultyGroup" TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,282,308,89"/>
+        <TextBox x:Name="txtLocalizedGroup"  TextWrapping="Wrap" TextChanged="TextBox_TextChanged" Margin="102,305,308,78"/>
+        <Button x:Name="btnClear" Content="Clear forms" HorizontalAlignment="Left" Margin="593,12,0,0" VerticalAlignment="Top" Height="43" Width="87" Click="btnClear_Click"/>
+        <Button x:Name="btnPrint" Content="Print user" HorizontalAlignment="Left" Margin="593,71,0,0" VerticalAlignment="Top" Height="43" Width="87" Click="btnPrint_Click"/>
+        <Button x:Name="btnDeactivate" Content="Deactivate forms" HorizontalAlignment="Left" Margin="593,136,0,0" VerticalAlignment="Top" Height="43" Width="87" Click="btnDeactivate_Click"/>
+        <Button x:Name="btnActivate" Content="Activate forms" HorizontalAlignment="Left" Margin="593,201,0,0" VerticalAlignment="Top" Height="43" Width="87" Click="btnActivate_Click"/>
+        <Button x:Name="btnTest" Content="Test DB" HorizontalAlignment="Left" Margin="593,271,0,0" VerticalAlignment="Top" Height="43" Width="87" Click="btnTest_Click"/>
+        <Label Content="Име: " Margin="0,0,698,387"/>
+        <Label Content="Презиме: " Margin="0,24,698,363"/>
+        <Label Content="Фамилия: " Margin="0,55,698,328"/>
+        <Label Content="Факултет: " Margin="0,104,698,280"/>
+        <Label Content="Специалност: " Margin="0,124,698,253"/>
+        <Label Content="ОКС: " Margin="0,153,698,221"/>
+        <Label Content="Статус: " Margin="0,179,698,184" RenderTransformOrigin="0.497,0.767"/>
+        <Label Content="Фак. номер: " Margin="0,205,698,174"/>
+        <Label Content="Курс: " Margin="0,260,698,120"/>
+        <Label Content="Поток: " Margin="0,284,698,89"/>
+        <Label Content="Група: " Margin="0,308,698,78"/>
+    </Grid>
+</Window>
