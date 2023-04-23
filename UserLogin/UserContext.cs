@@ -7,7 +7,7 @@ namespace UserLogin
 {
     internal class UserContext : DbContext
     {
-        public UserContext() : base("Server=localhost\\GAS-LAPTOP;Database=StudentInfoDatabase;Trusted_Connection=True;") { }
+        public UserContext() : base("Server=localhost\\ASUS;Database=StudentInfoDatabase;Trusted_Connection=True;") { }
         public DbSet<User> Users { get; set; }
     }
 }
